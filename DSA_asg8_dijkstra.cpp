@@ -11,10 +11,9 @@ public:
     void accept()
     {
           int src,dest,cost,i,j;
-          cout<<"\n Enter no. of vertices: ";
-          cin>>n;
-          cout<<"\n Enter no. of edges: ";
-          cin>>e;
+          cout<<"\n Enter no. of vertices and edges : ";
+          cin>>n>>e;
+        
           for(i=0;i<n;i++)
           {
              for(j=0;j<n;j++)
@@ -41,7 +40,7 @@ public:
 
         /*
             Create a temporary matrix (R) and copy all the contents of the adjacency matrix (G)
-            except replace all the 0’s with infinity
+            except replace all the 0â€™s with infinity
         */
 
         for(i=0; i<n; i++)
